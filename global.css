@@ -42,8 +42,9 @@
   --color-text-blue: #2196f3;
 }
 
-.bg-yellow {
-  background-color: #ffeb3b;
+.notion-semantic-string .link {
+  border-bottom: 0;
+  opacity: 1;
 }
 
 /* SUPER default classes */
