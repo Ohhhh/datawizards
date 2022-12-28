@@ -470,6 +470,14 @@ orientado a negocios
   letter-spacing: 0.2px;
   text-align: center;
 }
+.notion-column-list .notion-column > .notion-text .notion-text__children .notion-text {
+  transition: color 250ms ease-in-out;
+}
+.notion-column-list .notion-column > .notion-text .notion-text__children .notion-text:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  text-underline-offset: .3rem;
+  color: var(--color-text-blue);
+}
 .notion-column-list .notion-column > .notion-text .notion-text__children .notion-text:last-of-type {
   font-size: 0.875rem;
   font-weight: 500;
