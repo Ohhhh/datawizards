@@ -1,0 +1,568 @@
+*, :after, :before {
+  box-sizing: border-box !important;
+  font-family: Goldplay !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+}
+
+/* FONTS */
+/* Medium */
+@font-face {
+  font-family: "Goldplay";
+  src: url("https://ohhhh.github.io/datawizards/goldplay-medium-latin-subset.woff2") format("woff2"),
+    url("https://ohhhh.github.io/datawizards/goldplay-medium-latin-subset.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* Bold */
+@font-face {
+  font-family: "Goldplay";
+  src: url("https://ohhhh.github.io/datawizards/goldplay-bold-latin-subset.woff2") format("woff2"),
+    url("https://ohhhh.github.io/datawizards/goldplay-bold-latin-subset.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Black */
+@font-face {
+  font-family: "Goldplay";
+  src: url("https://ohhhh.github.io/datawizards/goldplay-black-latin-subset.woff2") format("woff2"),
+    url("https://ohhhh.github.io/datawizards/goldplay-black-latin-subset.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --max-width: 55.125rem !important;
+  --max-width: 65rem !important;
+  --color-text-default: #404040 !important;
+  --color-bg-yellow: #ffeb3b;
+  --color-text-blue: #2196f3;
+}
+
+/* SUPER default classes */
+h3.notion-heading {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.max-width {
+  max-width: var(--max-width) !important;
+}
+
+.super-root {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+.super-root.parent-page__index {
+  max-width: 65rem !important;
+}
+
+.notion-header.page{
+  margin: 0 !important;
+  display: none;
+}
+
+.super-content-wrapper {
+  /* padding-inline: 3rem !important; */
+  margin-bottom: 3rem;
+}
+.super-content {
+  padding: 0 !important;
+}
+.super-content > article {
+  display: grid !important;
+  justify-items: center !important;
+}
+.notion-semantic-string .link{
+  border: 0;
+  opacity: 1;
+}
+@media screen and (max-width:768px) {
+  .super-content > article {
+    padding-inline: 1.5rem;
+  }
+}
+
+/* ************************ */
+/* ************************ */
+/* ************************ */
+/* PAGE COMMONS */
+
+/* ****** */
+/* NAVBAR */
+.super-navbar.simple {
+  margin-top: 1.6875rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+}
+.super-navbar__logo-image {
+  width: 198px !important;
+}
+.super-navbar__item-list {
+  gap: 2rem;
+}
+.notion-link.super-navbar__item {
+  padding: 0 !important;
+  opacity: 1;
+}
+.super-navbar__item:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: .075rem !important;
+  text-underline-offset: .5rem !important;
+}
+
+@media screen and (max-width: 546px) {
+  .super-navbar__menu-wrapper.enter-done .super-navbar__menu {
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+  }
+  .super-navbar__menu-wrapper.enter-done .super-navbar__menu .super-navbar__menu-item-list {
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+/* ****** */
+/* FOOTER */
+.super-footer.stack.no-footnote {
+  padding: 0;
+  margin: 6.25rem 0 3.375rem;
+}
+.super-footer {
+  box-shadow: none;
+  background: transparent;
+}
+.super-footer.stack.no-footnote > *{
+  margin: 0;
+  padding: 0;
+}
+/* logo */
+.notion-link.super-footer__logo {
+  width: 243px;
+  height: 71px;
+  pointer-events: none;
+}
+
+/* links container */
+.super-footer.stack .super-footer__links {
+  gap: 0;
+}
+.super-footer.stack .super-footer__links > a {
+  padding: 0;
+}
+
+/* no links events */
+.super-footer__links a[href*="#"] {
+  pointer-events: none;
+}
+
+/* title */
+.super-footer__links a:nth-of-type(1),
+.super-footer__links a:nth-of-type(4){
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  margin-top: 3.375rem !important;
+}
+/* subtitle */
+.super-footer__links a:nth-of-type(2),
+.super-footer__links a:nth-of-type(5){
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+  max-width: 30ch;
+  margin-inline: auto;
+  padding: 1rem 0 !important;
+}
+/* links */
+.super-footer__links a:nth-of-type(3),
+.super-footer__links a:nth-of-type(6){
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.63;
+  letter-spacing: 0.16px;
+  color: #2196f3;
+}
+/* links hover */
+.super-footer__links a:nth-of-type(3):is(:hover, :focus-visible),
+.super-footer__links a:nth-of-type(6):is(:hover, :focus-visible){
+  text-decoration: underline;
+  text-decoration-thickness: .1rem;
+  text-underline-offset: .5rem;
+}
+
+/* ************************ */
+/* MAPA DEL SITIO */
+.notion-root > .notion-toggle {
+  display: none;
+}
+
+/* ************************ */
+/* SECTION HEADINGS */
+.notion-root > h1.notion-heading,
+.notion-root > h2.notion-heading {
+  padding: 0 !important;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 0.75;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.parent-page__index h1.notion-heading {
+  margin-top: 4.375rem !important;
+}
+.page__index h2.notion-heading {
+  margin-top: 10.25rem !important;
+}
+
+.notion-root > h1.notion-heading::after,
+.notion-root > h2.notion-heading::after {
+  display: block;
+  content: "";
+  width: 6.875rem;
+  height: 0.3125rem;
+  margin: 1.2rem auto 5rem;
+  background-color: #2196f3;
+}
+@media screen and (max-width: 546px) {
+  .notion-root > h2.notion-heading {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ************************ */
+/* ************************ */
+/* HOME PAGE */
+
+/* **** */
+/* HERO */
+
+/* somos una comunidad de profesionales */
+/* lifelong ... */
+.page__index .notion-root > .notion-text:first-of-type,
+.page__index .notion-root > .notion-text:nth-of-type(5){
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.43;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* somos una comunidad de profesionales */
+.page__index .notion-root > .notion-text:first-of-type{
+  margin-block-start: 6.75rem;
+}
+
+/*
+enseñamos
+analisis de datos
+orientado a negocios
+*/
+.page__index .notion-root > .notion-text:nth-of-type(2),
+.page__index .notion-root > .notion-text:nth-of-type(3),
+.page__index .notion-root > .notion-text:nth-of-type(4){
+  margin-block-start: 1.3125.rem;
+  font-size: 3.125rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 546px) {
+  .page__index .notion-root > .notion-text:nth-of-type(2), .page__index .notion-root > .notion-text:nth-of-type(3), .page__index .notion-root > .notion-text:nth-of-type(4) {
+    font-size: 1.75rem;
+  }
+}
+
+/* cta - entrar */
+.notion-root > .notion-text:nth-of-type(6) {
+  margin-top: 1.5rem;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #2196f3;
+  transition: box-shadow 300ms ease-in-out;
+}
+.notion-root > .notion-text:nth-of-type(6):is(:hover, :focus-visible) {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.notion-root > .notion-text:nth-of-type(6) .notion-text__content {
+  padding: 0;
+}
+.notion-root > .notion-text:nth-of-type(6) span {
+  line-height: 1;
+}
+.notion-root > .notion-text:nth-of-type(6) a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+/* QUE OFRECEMOS */
+/* features */
+/* wrapper */
+/* .page__index .notion-column-list:not(article > div:nth-of-type(13)) */
+.page__index .notion-column-list:not(:nth-last-of-type(2)){
+  display: grid;
+  grid-template-columns: auto auto;
+  --column-spacing: 0;
+  gap: 2rem;
+  max-width: 39.375rem;
+  align-items: center;
+}
+/* barrita amarilla */
+.page__index .notion-column-list:not(:nth-of-type(4n+2), :nth-last-of-type(2))::after{
+  display: block;
+  content: "";
+  width: 5px;
+  height: 58px;
+  grid-column: span 2;
+  justify-self: center;
+  background-color: #ffeb3b;
+}
+
+/* img izq */
+.notion-column-list:nth-of-type(2n+1){
+}
+/* img derecha */
+.page__index .notion-column-list:nth-of-type(2n+2){
+  justify-content: right;
+}
+.page__index .notion-column-list:nth-of-type(2n+2) .notion-heading,
+.page__index .notion-column-list:nth-of-type(2n+2) .notion-text__content{
+  text-align: right;
+}
+
+/* columns */
+.page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-column {
+  width: auto !important;
+  padding: 0;
+}
+
+/* title */
+.page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-heading span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+/* description */
+.page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-text p {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.88 !important;
+  letter-spacing: 0.16px;
+}
+.page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-semantic-string {
+  line-height: 1.88;
+}
+
+@media screen and (max-width: 546px) {
+  /* wrapper */
+  .page__index .notion-column-list:not(:nth-last-of-type(2)) {
+    grid-template-columns: initial;
+    gap: 1rem;
+  }
+  /* barrita amarilla */
+  .page__index .notion-column-list:not(:nth-of-type(4n+2), :nth-last-of-type(2))::after {
+    grid-column: span 1;
+    display: none;
+  }
+  /* image */
+  .page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-image {
+    display: flex;
+    margin: 0 auto;
+  }
+  /* center text */
+  .page__index .notion-column-list:nth-of-type(2n+1) .notion-heading,
+  .page__index .notion-column-list:nth-of-type(2n+1) .notion-text__content,
+  .page__index .notion-column-list:nth-of-type(2n+2) .notion-heading, .page__index .notion-column-list:nth-of-type(2n+2) .notion-text__content {
+    text-align: center;
+  }
+  /* description */
+  .page__index .notion-column-list:not(:nth-last-of-type(2)) .notion-text p {
+    text-align: center;
+  }
+  /* img first */
+  .page__index .notion-column-list:nth-of-type(2n+2) .notion-column:last-of-type{
+    grid-row: 1;
+  }
+  .page__index .notion-column-list:nth-of-type(3n+3),
+  .page__index .notion-column-list:nth-of-type(2n+2){
+    margin-top: 4rem;
+  }
+}
+
+
+/* MISION y QUIENES SOMOS */
+.page__index .notion-root > h2.notion-heading:not(:nth-of-type(1))::after {
+  margin-bottom: 2rem;
+}
+.page__index .notion-root > h2.notion-heading:not(:nth-of-type(1)) + .notion-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 546px) {
+  .page__index .notion-root > h2.notion-heading:not(:nth-of-type(1)) + .notion-text {
+    font-size: 1rem;
+  }
+}
+
+/* QUIENES SOMOS CARDS */
+.notion-root > .notion-column-list:nth-last-of-type(2) {
+  --column-spacing: 0;
+  margin-top: 4.375rem;
+  justify-content: space-around;
+}
+  
+@media screen and (max-width: 920px) {
+  .notion-root > .notion-column-list:nth-last-of-type(2) {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+.notion-root > .notion-column-list:nth-last-of-type(2) .notion-column {
+  padding: 2.5rem 1.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  flex-basis: 430px; /* 490px */
+}
+
+.notion-column-list .notion-column > .notion-text > * {
+  margin: 0;
+  padding: 0;
+}
+.notion-column-list .notion-column > .notion-text .notion-text__children {
+  display: grid;
+  justify-items: center;
+  gap: 1.75rem;
+}
+.notion-column-list .notion-column > .notion-text .notion-text__children .notion-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.notion-column-list .notion-column > .notion-text .notion-text__children .notion-text:last-of-type {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+}
+
+
+/* **************************************** */
+/* **************************************** */
+/* **************************************** */
+/* PAGINA CONTENIDO */
+
+/* wrapper */
+.parent-page__index article > .notion-column-list {
+  border-top: 0 !important;
+  padding: 0 !important;
+  justify-content: space-between !important;
+}
+@media screen and (max-width: 546px) {
+  .parent-page__index article > .notion-column-list {
+    gap: 2.5rem;
+  }
+}
+
+/* column */
+.parent-page__index .notion-column {
+  --column-spacing: 0;
+  flex-basis: 325px !important;
+  padding: 2.5rem 1.5rem 4.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 10%);
+}
+
+/* content wrapper */
+.parent-page__index .notion-column .notion-text__children {
+  gap: 0 !important;
+  
+}
+
+/* ilus */
+.parent-page__index .notion-column .notion-image {
+  height: 130px;
+}
+/* title */
+.parent-page__index .notion-column h2.notion-heading {
+  margin-top: 2rem;
+  text-align: center;
+}
+/* descripcion */
+.parent-page__index .notion-column .notion-text__children .notion-text:nth-of-type(2) {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+}
+/* skills title */
+.parent-page__index .notion-column h3.notion-heading {
+  margin-top: 2.8125rem !important;
+}
+/* list */
+.parent-page__index .notion-column .notion-bulleted-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: 0.14px;
+  width: 22ch;
+  display: grid;
+  justify-content: center;
+}
+.parent-page__index .notion-column .notion-list-item {
+  padding-inline-start: 1.125rem;
+}
+.parent-page__index .notion-column .notion-list-item::marker {
+  content: "️✓";
+  color: var(--color-text-blue);
+}
+
+/* Button */
+.parent-page__index .notion-column .notion-text__children .notion-text:last-of-type p {
+  padding: 0;
+  display: flex;
+  margin-top: 3rem;
+}
+.parent-page__index .notion-column .notion-link.link {
+  padding: .75rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.03;
+  letter-spacing: 0.16px;
+}
+.parent-page__index .notion-column .notion-link.link:is(:hover, :focus-visible) {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
