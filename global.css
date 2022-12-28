@@ -42,6 +42,10 @@
   --color-text-blue: #2196f3;
 }
 
+.bg-yellow {
+  background-color: #ffeb3b;
+}
+
 /* SUPER default classes */
 h3.notion-heading {
   margin: 0 !important;
